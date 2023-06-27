@@ -5,5 +5,8 @@ function decimalToBinary(decimal) {
 		decimal = Math.floor(decimal / 2);
 	}
 return binary;
-  
+	
 }
+
+const binary = decimalToBinary(decimal);
+	console.log(binary);
