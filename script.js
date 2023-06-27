@@ -1,3 +1,3 @@
 function decimalToBinary(dec) {
-  return dec.toString(2);
+  return dec.toBinary();
 }
