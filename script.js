@@ -1,5 +1,12 @@
-function decimalToBinary(decimal) {
-  const result = decimal.toString(2);
-	return result;
+function toBinary(v, str) {
+  if (!Number.isSafeInteger(v) || v < 0) {
+    throw new Error('v must be a non-negative integer');
   }
-
+  if (v === 1) {
+    return '1';
+  }
+  if (v === 0) {
+    return '0';
+  }
+  return toBinary(Math.floor(v / 2)) + (v % 2);
+}
