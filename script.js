@@ -1,4 +1,4 @@
 function decimalToBinary(decimal) {
-  const result = number.toString(2);
+  const result = decimal.toString(2);
   }
 
