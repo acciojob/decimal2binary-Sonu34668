@@ -15,21 +15,12 @@
 // const binary = decimalToBinary(decimal);
 // 	console.log(binary);
 
-function threeSum(arr, target) {
-     let binaryNum = new Array(32);
- 
-   
-    let i = 0;
-    while (n > 0) {
- 
-      
-        binaryNum[i] = n % 2;
-        n = Math.floor(n / 2);
-        i++;
-    }
-  binaryNum.reverse();
-	return binaryNum;
-    
-}
+const input = prompt('Please enter a decimal number:');
+const decimal = parseInt(input);
 
-module.exports = threeSum;
+if (isNaN(decimal)) {
+  console.log('Invalid input. Please enter a valid decimal number.');
+} else {
+  const binary = decimalToBinary(decimal);
+  console.log(`The binary equivalent of ${decimal} is ${binary}.`);
+}
